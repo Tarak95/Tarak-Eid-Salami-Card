@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarak || Eid Salami Card</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay-pattern"></div>
+
+<div class="container">
+
+    <div class="name-box" id="nameBox">
+        <h2>🌙 Eid Mubarak</h2>
+        <input type="text" id="username" placeholder="Enter Name">
+        <button onclick="startCard()">Create Card</button>
+    </div>
+
+    <div class="card" id="card">
+        <div class="front">
+            <h2 id="greetingText"></h2>
+            <p>Tap to Open</p>
+        </div>
+
+        <div class="back">
+            <h2>🎉 Eidi Salami</h2>
+            <button id="salamiBtn">Get Salami 💸</button>
+            <div class="money" id="money"></div>
+            <button onclick="shareCard()" class="share-btn">💌 Share</button>
+        </div>
+    </div>
+
+</div>
+
+<canvas id="confetti"></canvas>
+
+<audio id="eidMusic" src="./eid.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
